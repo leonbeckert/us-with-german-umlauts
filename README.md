@@ -1,4 +1,4 @@
-# Mac U.S. keyboard layout with German Umlauts
+# True U.S. keyboard layout with German Umlauts
 This layout is designed for German speakers using U.S. English mac keyboards. The layout is a modified U.S. English keyboard layout with German Umlauts using `⌥ option` key bindings:
 * `option` + `a` => `ä`
 * `option` + `o` => `ö`
@@ -13,20 +13,20 @@ This layout is designed for German speakers using U.S. English mac keyboards. Th
 1. To install the keyboard layout open `Terminal` on your mac and execute the command below. 
 
 ```bash
-curl -sL https://api.github.com/repos/patrick-zippenfenig/us-with-german-umlauts/tarball/master | sudo tar xz --exclude=README.md --strip=1 -C /Library/Keyboard\ Layouts/
+curl -sL https://api.github.com/repos/leonbeckert/us-with-german-umlauts/tarball/master | sudo tar xz --exclude=README.md --strip=1 -C /Library/Keyboard\ Layouts/
 ```
 
 2. Enter your password. This is required because the keyboard layout is installed for all users on your mac.
 3. Open `System Preferences` -> `Keyboard` -> `Input Sources`
-4. Click `+` and add `U.S. with German Umlauts` (category `English`) (Note: If the keyboard is not displayed, you may have to restart your device)
+4. Click `+` and add `True U.S. with German Umlauts` (category `English`) (Note: If the keyboard is not displayed, you may have to restart your device)
 5. Check `☑ Show Input menu in menu bar`
-6. In the menu bar (top right) select `U.S. with German Umlauts`
+6. In the menu bar (top right) select `True U.S. with German Umlauts`
 
 # Uninstall #
 1. Delete directory `/Library/Keyboard\ Layouts/US-with-German-Umlauts.bundle` with
 
 ```bash
-sudo rm -R /Library/Keyboard\ Layouts/US-with-German-Umlauts.bundle
+sudo rm -R /Library/Keyboard\ Layouts/True-US-with-German-Umlauts.bundle
 ```
 
 # Credits #
@@ -36,6 +36,7 @@ Generated with [Ukelele 3.2.7](http://software.sil.org/ukelele/) and tested on m
 MIT License
 
 Copyright (c) 2017 Patrick Zippenfenig
+Modified 2024 Leon Beckert (grave/tilde key fix)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
